@@ -1,0 +1,14 @@
+.footer {
+  &-wrapper {
+    clear: both;
+    border-top: 1px solid $grey-03;
+    width: 100%;
+    padding: 3rem 2rem;
+    text-align: left;
+    font-size: 1.4rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: $white;
+  }
+}

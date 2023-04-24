@@ -1,0 +1,52 @@
+.sidebar {
+	&-wrapper {
+		background-color: $black-01;
+		min-width: 15rem;
+		height: 100%;
+		position: fixed;
+		transition: transform .5s ease-out;
+
+		&--hide {
+			transform: translateX(-15rem);
+			>.button-sidebar {
+				>p {
+					transform: rotate(-180deg);
+					transition: transform .6s ease-out;
+				}
+			}
+		}
+	}
+
+	&-item {
+		&__link {
+			display: block;
+			color: $grey-02;
+			font-family: 1.6rem;
+			padding: 1.4rem 1.6rem;
+			font-family: $roboto_regular;
+			border-bottom: 1px solid $grey-01;
+			transition: all 0.4s ease;
+
+			&--active {
+				color: $white;
+			}
+			&:hover {
+				color: $white;
+				background-color: $grey-01;
+			}
+		}
+	}
+}
+.button-sidebar {
+	position: absolute;
+	top: 0;
+	left: 15rem;
+	width: 3rem;
+	height: 3rem;
+	text-align: center;
+	line-height: 3rem;
+	background-color: $black-01;
+	color: $grey-02;
+	z-index: 10;
+	cursor: pointer;
+}
